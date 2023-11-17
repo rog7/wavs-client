@@ -3,11 +3,11 @@ import { ChangeEvent, useContext, useEffect, useRef, useState } from "react";
 import { API_BASE_URL, STRIPE_PAYMENT_LINK } from "@/utils/globalVars";
 import { getItem } from "@/utils/localStorage";
 import EmptyState from "./EmptyState";
-import { IsProUserContext } from "@/app/home/page";
 import PlayCircleIcon from "@heroicons/react/24/outline/PlayCircleIcon";
 import PauseCircleIcon from "@heroicons/react/24/outline/PauseCircleIcon";
 import LockClosedIcon from "@heroicons/react/24/outline/LockClosedIcon";
 import ArrowPathIcon from "@heroicons/react/24/outline/ArrowPathIcon";
+import { IsProUserContext } from "@/exports/IsProUserContext";
 
 interface Props {
   showFavorites: boolean;

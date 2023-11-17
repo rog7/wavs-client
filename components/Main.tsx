@@ -1,9 +1,8 @@
-import { Fragment, useContext, useState } from "react";
+import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { clearStorage, getItem } from "@/utils/localStorage";
 import { useRouter } from "next/navigation";
 import Feed from "./Feed";
-import { IsProUserContext } from "@/app/home/page";
 import { STRIPE_PAYMENT_LINK } from "@/utils/globalVars";
 import jwt, { JwtPayload } from "jsonwebtoken";
 import HomeIcon from "@heroicons/react/24/outline/HomeIcon";

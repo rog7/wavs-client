@@ -5,30 +5,20 @@ import { API_BASE_URL, POSTHOG_API_KEY } from "@/utils/globalVars";
 import { clearStorage, getItem, setItem } from "@/utils/localStorage";
 import jwt, { JwtPayload } from "jsonwebtoken";
 import { useRouter } from "next/navigation";
-import { createContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import posthog from "posthog-js";
-
-interface IsProUserContextType {
-  isProUser: boolean;
-  setIsProUser: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-export const IsProUserContext = createContext<IsProUserContextType>({
-  isProUser: false,
-  setIsProUser: () => {},
-});
+import { IsProUserContext } from "@/exports/IsProUserContext";
 
 const Home = () => {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(true);
-  const [showMenu, setShowMenu] = useState(false);
   const [isProUser, setIsProUser] = useState(false);
 
   useEffect(() => {
     userIsAuthenticated();
     checkSubscriptionStatus();
 
-    posthog.init(POSTHOG_API_KEY, {
+    posthog.init(POSTHOG_API_KEY as string, {
       api_host: "https://app.posthog.com",
       autocapture: false,
     });
