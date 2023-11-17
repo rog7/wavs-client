@@ -1,7 +1,7 @@
 export const API_BASE_URL =
   process.env.NODE_ENV === "development"
     ? "https://ecc5-67-216-154-211.ngrok-free.app"
-    : "https://vault-server-jxzx.onrender.com:10000"
+    : "https://44.208.200.77:9000"
 
 export const STRIPE_PAYMENT_LINK =
   process.env.NODE_ENV === "development"
