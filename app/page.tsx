@@ -2,11 +2,11 @@
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import {
-  ArrowPathIcon,
   Bars3Icon,
-  CloudArrowUpIcon,
-  FingerPrintIcon,
-  LockClosedIcon,
+  BookmarkIcon,
+  MusicalNoteIcon,
+  PlayIcon,
+  PlusIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { CheckIcon } from "@heroicons/react/20/solid";
@@ -67,25 +67,25 @@ const features = [
     name: "Create custom filters",
     description:
       "So, you want to find chords with a melody note of F and in the key of C? Done.",
-    icon: CloudArrowUpIcon,
+    icon: PlusIcon,
   },
   {
     name: "Save for later",
     description:
       "In one tap, bookmark any chord so you can quickly refer back to it later.",
-    icon: LockClosedIcon,
+    icon: BookmarkIcon,
   },
   {
     name: "Chord voicing playback",
     description:
       "Every chord comes with an audio recording you can instantly listen to.",
-    icon: ArrowPathIcon,
+    icon: PlayIcon,
   },
   {
     name: "Exact notes provided",
     description:
       "Chords can be voiced in many different ways. Wavs provides the exact notes for each suggestion.",
-    icon: FingerPrintIcon,
+    icon: MusicalNoteIcon,
   },
 ];
 const tiers = [
@@ -322,7 +322,7 @@ export default function Home() {
               {features.map((feature) => (
                 <div key={feature.name} className="relative pl-16">
                   <dt className="text-base font-semibold leading-7 text-gray-900">
-                    <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                    <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-[#0070F3]">
                       <feature.icon
                         className="h-6 w-6 text-white"
                         aria-hidden="true"
