@@ -1,7 +1,7 @@
 export const API_BASE_URL =
   process.env.NODE_ENV === "development"
     ? "https://ecc5-67-216-154-211.ngrok-free.app"
-    : "http://api.usewavs.com:9000"
+    : "https://wavs.onrender.com"
 
 export const STRIPE_PAYMENT_LINK =
   process.env.NODE_ENV === "development"
