@@ -15,6 +15,8 @@ import { useRouter } from "next/navigation";
 import { STRIPE_PAYMENT_LINK } from "@/utils/globalVars";
 import Testimonials from "@/components/Testimonials";
 import { Logo } from "@/components/Logo";
+import Image from "next/image"
+import appScreenshot from "../public/Wavs Desktop Mockup.png"
 
 const icons = [
   {
@@ -205,7 +207,7 @@ export default function Home() {
                 <div className="py-6">
                   <a
                     onClick={() => router.push("/sign-in")}
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="cursor-pointer -mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Log in
                   </a>
@@ -256,15 +258,16 @@ export default function Home() {
                 </div>
               </div>
               <div className="mt-16 flow-root sm:mt-24">
-                <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
-                  <img
-                    src="https://tailwindui.com/img/component-images/project-app-screenshot.png"
+              <Image
+                    src={appScreenshot}
                     alt="App screenshot"
-                    width={2432}
-                    height={1442}
-                    className="rounded-md shadow-2xl ring-1 ring-gray-900/10"
                   />
-                </div>
+                {/* <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
+                  <Image
+                    src={appScreenshot}
+                    alt="App screenshot"
+                  />
+                </div> */}
               </div>
             </div>
           </div>
