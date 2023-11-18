@@ -82,7 +82,7 @@ const features = [
   {
     name: "Exact notes provided",
     description:
-      "Chords can be voiced in many different ways. Vault provides the exact notes for each suggestion.",
+      "Chords can be voiced in many different ways. Wavs provides the exact notes for each suggestion.",
     icon: FingerPrintIcon,
   },
 ];
@@ -132,7 +132,7 @@ export default function Home() {
         >
           <div className="flex lg:flex-1">
             <div className="cursor-pointer -m-1.5 p-1.5">
-              <span className="sr-only">Vault</span>
+              <span className="sr-only">Wavs</span>
               <Logo />
             </div>
           </div>
@@ -176,7 +176,7 @@ export default function Home() {
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
             <div className="cursor-pointer -m-1.5 p-1.5">
-              <span className="sr-only">Vault</span>
+              <span className="sr-only">Wavs</span>
               <Logo />
             </div>
               <button

@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 
 
 export const metadata: Metadata = {
-  title: "Vault",
+  title: "Wavs",
   description: "A place to discover new chords"
 };
 

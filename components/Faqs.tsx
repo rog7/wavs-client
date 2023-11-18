@@ -5,12 +5,12 @@ const faqs = [
   {
     question: "How diverse are the chord voicings in the library?",
     answer:
-      "Vault has a vast array of chord voicings spanning different genres and playing styles. The collection offers a rich variety to suit every pianist's needs.",
+      "Wavs has a vast array of chord voicings spanning different genres and playing styles. The collection offers a rich variety to suit every pianist's needs.",
   },
   {
     question: "Can I access this app from multiple devices?",
     answer:
-      "Most definitely! Vault is accessible across multiple platforms, ensuring that you can seamlessly switch between desktop, tablet, and smartphone.",
+      "Most definitely! Wavs is accessible across multiple platforms, ensuring that you can seamlessly switch between desktop, tablet, and smartphone.",
   },
   {
     question: "What sets your app apart from other chord libraries?",
