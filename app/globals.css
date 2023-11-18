@@ -59,7 +59,7 @@ a.button /* Target buttons styled as links */ {
 
 @font-face {
   font-family: "Custom";
-  src: url("../public/CustomFont-Book.woff2") format("woff2");
+  src: url("../public/Font.woff2") format("woff2");
 }
 
 body {
