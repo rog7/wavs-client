@@ -10,5 +10,5 @@ export const STRIPE_PAYMENT_LINK =
 
 export const POSTHOG_API_KEY =
   process.env.NODE_ENV === "development"
-    ? process.env.DEV_POSTHOG_KEY
-    : process.env.PROD_POSTHOG_KEY;
+    ? "phc_T2KxbF1upZUlk7SPVA5msqXhATER0bdKc5qgmK1uV6o"
+    : "phc_GuT13crpRtdIPxRi0pzg6xZbfPXz8Jz3IhiFMcfMHBN"

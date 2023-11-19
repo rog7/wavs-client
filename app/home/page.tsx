@@ -19,8 +19,7 @@ const Home = () => {
     checkSubscriptionStatus();
 
     posthog.init(POSTHOG_API_KEY as string, {
-      api_host: "https://app.posthog.com",
-      autocapture: false,
+      api_host: "https://app.posthog.com"
     });
     // Set up an interval to run checkSubscriptionStatus every minute (60000 milliseconds)
     const subscriptionStatusInterval = setInterval(() => {
