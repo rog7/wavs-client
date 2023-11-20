@@ -633,7 +633,7 @@ export default function Feed({ showFavorites }: Props) {
                           ))}
                       </tbody>
                     </table>
-                    {currentPage > 2 && !isProUser && (
+                    {currentPage > 3 && !isProUser && (
                       <div className="absolute top-0 left-0 w-full h-full backdrop-blur-sm">
                         <div className="flex flex-col justify-center items-center h-full px-10 gap-10">
                           <LockClosedIcon
